@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-text-color: orange;
+    --secnodery-text-color: black;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--secnodery-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1380px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+
+}
+
+.company-logo img {
+    width: 51px;
+    mix-blend-mode: difference;
+}
+
+.nav-links ul {
+    gap: 16px;
+}
+
+.hover-link:hover {
+    cursor: pointer;
+    color: var(--primary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active {
+    color: orange;
+}
+
+.search-bar {
+    gap: 8px;
+    height: 32px;
+}
+
+.news-input {
+    width: 413px;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid orange;
+    padding-inline: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.search-btn {
+    padding: 8px 24px;
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    min-height: 400px;
+    width: 360px;
+    overflow: hidden;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.card:hover {
+    scale: 1.01;
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+}
+
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+
+}
+

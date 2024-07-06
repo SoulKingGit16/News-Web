@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News_Monk</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a class="company-logo" onclick="home()" href="#">
+                <img src="IMG_20240503_204153.jpg" alt="">
+            </a>
+
+            <div class="search-bar flex">
+                <input type="text" id="news-input" class="news-input"
+                    placeholder="Search Your Favorite News-topic Here!">
+                <button id="search-btn" class="search-btn">Find</button>
+            </div>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item">👉🏻</li>
+                    <li class="hover-link nav-item" id="Cricket" onclick="onNavClick('Cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="Finance" onclick="onNavClick('Finance')">Finance</li>
+                    <li class="hover-link nav-item" id="Politics" onclick="onNavClick('Politics')">Politics</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex " id="card-container">
+
+        </div>
+        <template id="news-template">
+            <div class="card" id="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This Is a Title</h3>
+                    <h6 class="news-source" id="news-source">End gadget 04/05/2024</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+                        praesentium
+                        assumenda dolorum nemo aut quas nulla voluptatibus suscipit possimus incidunt!</p>
+                </div>
+            </div>
+        </template>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>
